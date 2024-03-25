@@ -6,6 +6,7 @@ const Header = () => {
         <NavLink to={'/'}><button className="btn"><a>Home</a></button></NavLink>
         <NavLink to={'/listed'}> <button className="btn"><a>Listed Books</a></button></NavLink>
         <NavLink to={'/pages'}><button className="btn"><a>Pages to Read</a></button></NavLink>
+        <NavLink to={'/contact'}><button className="btn"><a>Contact</a></button></NavLink>
 
     </>
     return (
