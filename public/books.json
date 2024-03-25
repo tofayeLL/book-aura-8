@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "name": "The Girl with the Dragon Tattoo",
+        "author": "Stieg Larsson",
+        "image": "https://i.ibb.co/k4rCCgH/book1.png",
+        "review": "A gripping mystery thriller with complex characters and unexpected twists.",
+        "totalPages": 672,
+        "rating": 4.4,
+        "category": "Mystery",
+        "tags": [
+            "Suspense",
+            "Psychological"
+        ],
+        "publisher": "Norstedts Förlag",
+        "yearOfPublishing": 2005
+    },
+    {
+        "id": 2,
+        "name": "The Da Vinci Code",
+        "author": "Dan Brown",
+        "image": "https://i.ibb.co/VgCzxpy/book2.png",
+        "review": "A captivating adventure uncovering secrets of the past, filled with suspense and intrigue.",
+        "totalPages": 454,
+        "rating": 4.2,
+        "category": "Thriller",
+        "tags": [
+            "Mystery",
+            "Conspiracy"
+        ],
+        "publisher": "Doubleday",
+        "yearOfPublishing": 2003
+    },
+    {
+        "id": 3,
+        "name": "Harry Potter and the Philosopher's Stone",
+        "author": "J.K. Rowling",
+        "image": "https://i.ibb.co/YtKmrj6/book3.png",
+        "review": "An enchanting tale of magic, friendship, and adventure that captivates readers of all ages.",
+        "totalPages": 332,
+        "rating": 4.7,
+        "category": "Fantasy",
+        "tags": [
+            "Magic",
+            "Coming of Age"
+        ],
+        "publisher": "Bloomsbury Publishing",
+        "yearOfPublishing": 1997
+    },
+    {
+        "id": 4,
+        "name": "The Kite Runner",
+        "author": "Khaled Hosseini",
+        "image": "https://i.ibb.co/s9P7qMQ/book4.png",
+        "review": "A poignant story of friendship, betrayal, and redemption set against the backdrop of Afghanistan.",
+        "totalPages": 372,
+        "rating": 4.5,
+        "category": "Fiction",
+        "tags": [
+            "Drama",
+            "Historical"
+        ],
+        "publisher": "Riverhead Books",
+        "yearOfPublishing": 2003
+    },
+    {
+        "id": 5,
+        "name": "The Help",
+        "author": "Kathryn Stockett",
+        "image": "https://i.ibb.co/ypLdwFt/book5.png",
+        "review": "A compelling novel exploring racial tensions and the lives of African American maids in 1960s Mississippi.",
+        "totalPages": 464,
+        "rating": 4.5,
+        "category": "Fiction",
+        "tags": [
+            "Social Issues",
+            "Historical"
+        ],
+        "publisher": "Penguin Group",
+        "yearOfPublishing": 2009
+    },
+    {
+        "id": 6,
+        "name": "The Hunger Games",
+        "author": "Suzanne Collins",
+        "image": "https://i.ibb.co/znNsPd3/book6.png",
+        "review": "A thrilling dystopian novel featuring a young heroine's struggle for survival in a brutal televised competition.",
+        "totalPages": 374,
+        "rating": 4.3,
+        "category": "Science Fiction",
+        "tags": [
+            "Dystopia",
+            "Adventure"
+        ],
+        "publisher": "Scholastic Press",
+        "yearOfPublishing": 2008
+    }
+]
