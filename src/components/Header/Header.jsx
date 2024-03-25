@@ -1,13 +1,13 @@
 import { NavLink } from "react-router-dom";
+import './Header.css'
 
 const Header = () => {
 
     const links = <>
-        <NavLink to={'/'}><button className="btn"><a>Home</a></button></NavLink>
-        <NavLink to={'/listed'}> <button className="btn"><a>Listed Books</a></button></NavLink>
-        <NavLink to={'/pages'}><button className="btn"><a>Pages to Read</a></button></NavLink>
-        <NavLink to={'/contact'}><button className="btn"><a>Contact</a></button></NavLink>
-
+        <li><NavLink to={'/'}>Home</NavLink></li>
+        <li><NavLink to={'/listed'}>Listed Books</NavLink></li>
+        <li><NavLink to={'/pages'}>Pages to Read</NavLink></li>
+        <li><NavLink to={'/contact'}>Contact</NavLink></li>
     </>
     return (
         <div>
@@ -25,10 +25,10 @@ const Header = () => {
 
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">daisyUI</a>
+                    <a className="btn btn-ghost text-4xl font-bold">Book Aura</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1 mr-4 space-x-3">
+                    <ul className="menu menu-horizontal px-1 mr-4 space-x-2">
                         {
                             links
                         }
