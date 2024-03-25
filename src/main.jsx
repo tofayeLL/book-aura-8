@@ -10,27 +10,36 @@ import Home from './components/Home/Home';
 import ListedBooks from './components/ListedBooks/ListedBooks';
 import PagesRead from './components/PagesRead/PagesRead';
 import ErrorPage from './components/ErrorPage/ErrorPage';
+import Book from './components/Book/Book';
+import BookDetails from './components/BookDetails/BookDetails';
+
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
-    errorElement:<ErrorPage></ErrorPage>,
-    children:[
+    errorElement: <ErrorPage></ErrorPage>,
+    children: [
       {
-        path:'/',
-        element:<Home></Home>
+        path: '/',
+        element: <Home></Home>
       },
       {
-        path:'/listed',
-        element:<ListedBooks></ListedBooks>
+        path: '/listed',
+        element: <ListedBooks></ListedBooks>
       },
       {
-        path:'/pages',
-        element:<PagesRead></PagesRead>
+        path: '/pages',
+        element: <PagesRead></PagesRead>
+      },
+      {
+        path: '/book/:id',
+        element: <BookDetails></BookDetails>,
+        loader: () => fetch('/books.json')
       }
-     
+
+
     ]
   },
 ]);

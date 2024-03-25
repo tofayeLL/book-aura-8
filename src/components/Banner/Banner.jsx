@@ -4,8 +4,6 @@ import img from '../../../public/images/book.png'
 
 const Banner = () => {
     return (
-        <div>
-
             <section className="bg-[#f3f3f3] rounded-lg my-16">
                 <div className="container flex flex-col lg:gap-0 gap-8 justify-center lg:items-center px-10 lg:px-20 mx-auto py-10 lg:py-20 lg:flex-row lg:justify-between ">
                     <div className="lg:space-y-12 space-y-6 flex-1">
@@ -20,9 +18,7 @@ const Banner = () => {
 
 
                 </div>
-            </section>
-
-        </div>
+            </section> 
     );
 };
 
