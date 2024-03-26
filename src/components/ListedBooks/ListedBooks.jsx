@@ -40,12 +40,31 @@ const ListedBooks = () => {
                 <h1 className="text-3xl font-bold">Listed Books</h1>
             </div>
 
+
+            {/* filter sort by */}
+
+            <div className='flex flex-col justify-center items-center my-6'>
+
+                <details className="dropdown">
+                    <summary className="m-1 btn bg-[#23be0a] text-white px-8 text-lg">Sort By</summary>
+                    <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+                        <li><a>Rating</a></li>
+                        <li><a>Number of pages</a></li>
+                        <li><a>Publisher year</a></li>
+                    </ul>
+                </details>
+
+            </div>
+
+
+
+
             {/* tab section */}
 
             <div>
 
-
                 <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
+
                     <TabList>
                         <Tab>Read Books</Tab>
                         <Tab>Whish List</Tab>
@@ -62,41 +81,23 @@ const ListedBooks = () => {
                                 }
                             </div>
 
-                            {/* card 1 */}
-
-                            {/*  <div className="hero  bg-base-200">
-                                <div className="hero-content flex-col lg:flex-row-reverse">
-                                    <img src="" className="max-w-sm rounded-lg shadow-2xl" />
-                                    <div>
-                                        <h1 className="text-5xl font-bold">Box Office News!</h1>
-                                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                                        <button className="btn btn-primary">Get Started</button>
-                                    </div>
-                                </div>
-                            </div> */}
-                            {/* card 1 */}
-
                         </div>
                     </TabPanel>
+
+
+
                     <TabPanel>
                         <div className='space-y-8'>
                             {
-                                 wishList.map((wishList , index) => <WishList
-                                 wishList={wishList} 
-                                 key={index}></WishList>)
+                                wishList.map((wishList, index) => <WishList
+                                    wishList={wishList}
+                                    key={index}></WishList>)
                             }
 
                         </div>
                     </TabPanel>
+
                 </Tabs>
-
-
-
-
-
-
-
-
 
             </div>
 
