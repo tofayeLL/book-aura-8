@@ -10,7 +10,7 @@ const Banner = () => {
                         <h1 className="lg:text-6xl text-xl font-bold">Books to freshen up
                             <br />your bookshelf</h1>
                         <div>
-                            <Link to={'/listed'}> <button className="btn bg-[#23be0a] text-white font-medium">View The List</button></Link>
+                            <Link to={'/listed'}> <button className="btn text-lg bg-[#23be0a] text-white font-medium">View The List</button></Link>
                         </div>
                     </div>
 
