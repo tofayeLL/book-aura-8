@@ -37,7 +37,7 @@ const ListedBooks = () => {
         <div>
             <div className="bg-[#f3f3f3] flex justify-center items-center
             py-6 rounded-lg my-10 ">
-                <h1 className="text-3xl font-bold">Listed Books</h1>
+                <h1 className="text-4xl font-bold">Books</h1>
             </div>
 
 

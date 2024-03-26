@@ -1,12 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { getStoredRead } from "../../utility/localstorage";
-/* import React, { PureComponent } from 'react';
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, DefaultTooltipContent } from 'recharts'; */
-
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
-
-
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 
 
 const PagesRead = () => {
@@ -16,7 +11,7 @@ const PagesRead = () => {
     const [readBook, setReadBooks] = useState([]);
     useEffect(() => {
         const getReadBookId = getStoredRead();
-        // console.log(getReadBookId);
+
         if (books.length > 0) {
             const bookRead = books.filter(book => getReadBookId.includes(book.id));
             setReadBooks(bookRead);
@@ -33,7 +28,7 @@ const PagesRead = () => {
             page: book?.totalPages
         }
     })
-    // console.log(data);
+
 
 
 
@@ -55,17 +50,6 @@ const PagesRead = () => {
 
     return (
         <div className="flex flex-col justify-center items-center ">
-            {/* <BarChart width={800} height={400} data={data}>
-                <XAxis dataKey='name'></XAxis>
-                <YAxis></YAxis>
-                <Bar dataKey="page" fill="#8884d8" />
-                <Tooltip></Tooltip>
-            </BarChart> */}
-
-
-
-
-
 
             <BarChart
                 width={1200}
@@ -87,6 +71,7 @@ const PagesRead = () => {
                     ))}
                 </Bar>
                 <Tooltip></Tooltip>
+                <Legend></Legend>
             </BarChart>
         </div>
     );
