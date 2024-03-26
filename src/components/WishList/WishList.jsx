@@ -20,19 +20,20 @@ const WishList = ({ wishList }) => {
                         <p className="text-base font-semibold">By: {author}</p>
 
                         <div className="flex  items-center gap-6 ">
-                            Tags: {
+                        <span className="text-base font-medium">Tags:</span>
+                             {
                                 tags.map((tag, index) => <span className="bg-[#f3f3f3]  text-[#23be0a] p-2 px-4 rounded-full font-semibold"
                                     key={index}> # {tag}   </span>
 
                                 )
                             }
 
-                            <p className="flex gap-1 justify-center items-center"> <CiLocationOn></CiLocationOn> Year of Publishing : {yearOfPublishing}</p>
+                            <p className="flex gap-1 justify-center items-center font-semibold"> <CiLocationOn></CiLocationOn> Year of Publishing : {yearOfPublishing}</p>
 
 
                         </div>
 
-                        <div className="flex justify-start items-center gap-10 border-b-2 pb-5">
+                        <div className="flex justify-start items-center gap-10 border-b-2 pb-5 font-semibold opacity-80">
                             <p className="flex gap-2 justify-center items-center"> <FaUserGroup ></FaUserGroup> Publishers : {publisher}</p>
                             <p className="flex gap-2 justify-center items-center"> <MdFindInPage></MdFindInPage> Page:  {totalPages}</p>
 
