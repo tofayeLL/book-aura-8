@@ -9,7 +9,7 @@ const BookDetails = () => {
     const book = books.find(book => book.id === idInt);
     const { name, author, image, rating, category, review, tags, totalPages, publisher, yearOfPublishing } = book;
 
-
+    
 
     return (
         <section>
@@ -56,7 +56,7 @@ const BookDetails = () => {
 
 
                     <div className="space-x-4">
-                        <button className="btn">Read</button>
+                        <button  className="btn">Read</button>
                         <button className="btn">Wishlist</button>
 
                     </div>

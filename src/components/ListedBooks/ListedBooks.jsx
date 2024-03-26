@@ -1,10 +1,89 @@
-
+import { useState } from 'react';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
 
 const ListedBooks = () => {
+
+    const [tabIndex, setTabIndex] = useState(0);
+
     return (
         <div>
-              <h3 className="text-4xl font-bold">I am listed books</h3>
-            
+            <div className="bg-[#f3f3f3] flex justify-center items-center
+            py-6 rounded-lg my-10 ">
+                <h1 className="text-3xl font-bold">Listed Books</h1>
+            </div>
+
+            {/* tab section */}
+
+            <div>
+
+
+                <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
+                    <TabList>
+                        <Tab>Read Books</Tab>
+                        <Tab>Whishlist</Tab>
+                    </TabList>
+
+                    <TabPanel>
+                        <div className='space-y-8'>
+
+                            {/* card 1 */}
+
+                            <div className="hero  bg-base-200">
+                                <div className="hero-content flex-col lg:flex-row-reverse">
+                                    <img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" className="max-w-sm rounded-lg shadow-2xl" />
+                                    <div>
+                                        <h1 className="text-5xl font-bold">Box Office News!</h1>
+                                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                                        <button className="btn btn-primary">Get Started</button>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* card 1 */}
+
+                            <div className="hero  bg-base-200">
+                                <div className="hero-content flex-col lg:flex-row-reverse">
+                                    <img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" className="max-w-sm rounded-lg shadow-2xl" />
+                                    <div>
+                                        <h1 className="text-5xl font-bold">Box Office News!</h1>
+                                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                                        <button className="btn btn-primary">Get Started</button>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* card 1 */}
+
+                            <div className="hero  bg-base-200">
+                                <div className="hero-content flex-col lg:flex-row-reverse">
+                                    <img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" className="max-w-sm rounded-lg shadow-2xl" />
+                                    <div>
+                                        <h1 className="text-5xl font-bold">Box Office News!</h1>
+                                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                                        <button className="btn btn-primary">Get Started</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </TabPanel>
+                    <TabPanel>
+                        <h2>Any content 2</h2>
+                    </TabPanel>
+                </Tabs>
+
+
+
+
+
+
+
+
+
+            </div>
+
         </div>
     );
 };
