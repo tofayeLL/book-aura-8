@@ -7,7 +7,7 @@ const ReadList = ({ read }) => {
    
     return (
         <div>
-            <div className="shadow-xl border-[1px] border-slate-200 rounded-lg my-8 p-6 ">
+            <div className="shadow-lg border-[1px] border-slate-200 rounded-lg my-8 p-6 ">
                 <div className=" flex  justify-center gap-8">
                     <div className="lg:w-[20%]">
                         <img src={image} className="p-10 rounded-lg bg-[#f3f3f3]" />            

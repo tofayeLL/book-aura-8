@@ -67,7 +67,7 @@ const ListedBooks = () => {
 
                     <TabList>
                         <Tab>Read Books</Tab>
-                        <Tab>Whish List</Tab>
+                        <Tab>Wishlist Books</Tab>
                     </TabList>
 
                     <TabPanel>

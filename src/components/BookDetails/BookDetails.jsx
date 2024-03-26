@@ -72,7 +72,7 @@ const BookDetails = () => {
 
                     <div className="space-x-4 ">
                         <button onClick={handleRead} className="btn text-base  mt-4">Read</button>
-                        <button onClick={handleWish} className="btn text-base  bg-[#59c6d2]">Wishlist</button>
+                        <button onClick={handleWish} className="btn text-white text-base  bg-[#59c6d2]">Wishlist</button>
 
                     </div>
 

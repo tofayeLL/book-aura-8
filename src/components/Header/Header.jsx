@@ -4,10 +4,10 @@ import './Header.css'
 const Header = () => {
 
     const links = <>
-        <li><NavLink to={'/'}>Home</NavLink></li>
-        <li><NavLink to={'/listed'}>Listed Books</NavLink></li>
-        <li><NavLink to={'/pages'}>Pages to Read</NavLink></li>
-        <li><NavLink to={'/contact'}>Contact</NavLink></li>
+        <li className="font-semibold text-base"><NavLink to={'/'}>Home</NavLink></li>
+        <li className="font-semibold text-base"><NavLink to={'/listed'}>Listed Books</NavLink></li>
+        <li className="font-semibold text-base"><NavLink to={'/pages'}>Pages to Read</NavLink></li>
+        <li className="font-semibold text-base"><NavLink to={'/contact'}>Contact</NavLink></li>
     </>
     return (
         <div className="my-8">
@@ -37,8 +37,8 @@ const Header = () => {
                 </div>
                 <div className="navbar-end">
                     <div className="space-x-4">
-                        <a className="btn bg-[#23be0a] text-white">Sing In</a>
-                        <a className="btn bg-[#59c6d2] text-white">Sign Up</a>
+                        <a className="btn bg-[#23be0a] text-white  font-semibold">Sing In</a>
+                        <a className="btn bg-[#59c6d2] text-white font-semibold">Sign Up</a>
                     </div>
                 </div>
             </div>
