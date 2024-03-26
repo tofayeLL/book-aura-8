@@ -8,6 +8,7 @@ const Header = () => {
         <li className="font-semibold text-base"><NavLink to={'/listed'}>Listed Books</NavLink></li>
         <li className="font-semibold text-base"><NavLink to={'/pages'}>Pages to Read</NavLink></li>
         <li className="font-semibold text-base"><NavLink to={'/contact'}>Contact</NavLink></li>
+       <li><NavLink to={'/question'}>F A Q ?</NavLink></li>
     </>
     return (
         <div className="my-8">

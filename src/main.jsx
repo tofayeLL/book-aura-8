@@ -15,6 +15,8 @@ import BookDetails from './components/BookDetails/BookDetails';
 import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Contact from './components/Contact/Contact';
+import AskQuestion from './components/AskQuestion/AskQuestion';
+
 
 
 
@@ -46,7 +48,13 @@ const router = createBrowserRouter([
       {
         path:'/contact',
         element:<Contact></Contact>
+      },
+      {
+        path:'/question',
+        element:<AskQuestion></AskQuestion>
       }
+     
+     
 
 
     ]
