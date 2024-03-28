@@ -2,7 +2,9 @@
 import { CiLocationOn } from "react-icons/ci";
 import { FaUserGroup } from "react-icons/fa6";
 import { MdFindInPage } from "react-icons/md";
+
 const ReadList = ({ read }) => {
+  
     const { image, name, author, tags, yearOfPublishing, publisher, totalPages, category, rating } = read;
    
     return (
